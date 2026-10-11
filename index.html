@@ -64,8 +64,8 @@
         <h2 class="section-title">What Mossgate is</h2>
         <div class="grid three">
           <article class="card">
-            <h3>Seven hand-built gates</h3>
-            <p>Two worlds so far &mdash; Mossgate Dusk and Ember Caves &mdash; with more gates and a third world planned for 1.0. Each gate introduces a new idea: movers, one-way ledges, double-jumps.</p>
+            <h3>Thirty-six gates, rebuilt every run</h3>
+            <p>Six worlds of six gates. Each world opens with its hand-built gates, and the rest are generated for that run &mdash; so most of the game is different every time you play it.</p>
           </article>
           <article class="card">
             <h3>A different world every restart</h3>
@@ -119,9 +119,9 @@
         <p>If you sign in to Game Center, Apple handles your Game Center profile. Mossgate uses GameKit only to record achievements and leaderboard scores you earn in-game. We never see your Game Center friends list, your Apple ID email, or anything else from your Apple account. You can revoke the permission at any time in <em>iOS Settings → Game Center</em>.</p>
 
         <h3>4. In-app purchases</h3>
-        <p>Mossgate ships with one world (Mossgate Dusk, three gates) free of charge. A single non-consumable in-app purchase — <em>Full Game Unlock</em>, product ID <code>com.jphsystems.mossgate.fullgame</code>, currently priced at <strong>$2.99 USD</strong> (Tier 3) — unlocks the remaining three worlds. The free world is a complete experience on its own; the purchase is genuinely additional content, never a way to finish the free tier.</p>
+        <p>Mossgate ships with one world (Mossgate Dusk, six gates) free of charge. A single non-consumable in-app purchase — <em>Full Game Unlock</em>, product ID <code>com.jphsystems.mossgate.fullgame</code>, currently priced at <strong>$2.99 USD</strong> (Tier 3) — unlocks the other five worlds. The free world is a complete experience on its own; the purchase is genuinely additional content, never a way to finish the free tier. Each purchased world also stays shut until you have finished the world before it.</p>
         <p>Payment is handled entirely by Apple&rsquo;s StoreKit 2 framework. JPHsystems never sees your card details, your Apple ID, or your billing address. The transaction lives in your App Store purchase history, where you can request a refund via <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
-        <p>If you change devices, restore from an iCloud or iTunes backup, or just want to re-install the app, open <em>Setup → Restore Purchases</em> inside the game and the full game unlocks again from your App Store purchase record.</p>
+        <p>If you change devices, restore from an iCloud or iTunes backup, or just want to re-install the app, tap <em>Restore</em> on the title screen and the full game unlocks again from your App Store purchase record.</p>
 
         <h3>5. Children&rsquo;s privacy</h3>
         <p>Mossgate is suitable for all ages. It contains no user-generated content, no chat, no third-party advertising, and no links that take children outside the app.</p>
@@ -228,7 +228,7 @@
     <section id="changelog" class="prose">
       <div class="container narrow">
         <h2 class="section-title">Changelog</h2>
-        <p class="meta">Public release notes. Current build: <strong>0.5.0</strong> (build 14).</p>
+        <p class="meta">Public release notes. Current build: <strong>0.6.0</strong> (build 16).</p>
 
         <div class="release">
           <div class="release-head">
@@ -236,9 +236,20 @@
             <span class="release-date">In development</span>
           </div>
           <ul>
-            <li>Further gates, and the third world.</li>
             <li>Final pass on art, audio and balancing.</li>
             <li>Game Center achievements and leaderboards go live once the Apple Developer team is wired up.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.6.0</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>Six worlds, thirty-six gates.</strong> Each world opens with its hand-built gates; the rest are generated fresh for every run, so most of the game is new each time you play.</li>
+            <li><strong>The Full Game purchase is live in the app.</strong> Mossgate Dusk is free to keep. The other five worlds unlock with one purchase, and each world only opens once you have finished the one before it.</li>
+            <li>Coins can now be reached by an ordinary running jump. They were drifting to the top of the tallest jump the physics allows, which is not a jump a player makes by accident.</li>
           </ul>
         </div>
 
