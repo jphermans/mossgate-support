@@ -196,6 +196,31 @@ a:hover { text-decoration: underline; }
 }
 .hero-inner > *:not(.lantern) { position: relative; z-index: 1; }
 
+/* ────────────── Promo video ────────────── */
+
+.hero-video {
+  position: relative;
+  margin: 40px auto 0;
+  max-width: 960px;
+  padding: 0 22px;
+}
+.hero-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #000;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+}
+.video-credit {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
 /* ────────────── Sections ────────────── */
 
 .container {
