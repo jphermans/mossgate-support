@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c1c1f" />
+  <title>Mossgate — A JPHsystems Game</title>
+  <meta name="description" content="Mossgate is a 2D dusk-ruins platformer for iPhone. Run, jump, and keep the lantern lit across three worlds. Made by JPHsystems." />
+  <link rel="icon" href="assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-glyph" aria-hidden="true"></span>
+        <span class="brand-text">Mossgate</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#download" class="cta">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ─────────── HERO ─────────── -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Dusk ruins</p>
+        <h1 class="title">Mossgate</h1>
+        <p class="tagline">Run, jump, and keep the lantern lit across three worlds.</p>
+        <p class="byline">a <strong>JPHsystems</strong> game · iPhone · landscape</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn primary">Download on the App Store</a>
+          <a href="#support" class="btn ghost">Need help?</a>
+        </div>
+        <div class="lantern" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ─────────── FEATURES ─────────── -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">What Mossgate is</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>15 hand-built gates</h3>
+            <p>Three worlds — Mossgate Dusk, Ember Caves, and two more to come. Each gate introduces a new idea: movers, one-way ledges, double-jumps.</p>
+          </article>
+          <article class="card">
+            <h3>Built for iPhone</h3>
+            <p>Native SpriteKit renderer, true 60fps on every supported device. Landscape only. Your thumb is the control scheme.</p>
+          </article>
+          <article class="card">
+            <h3>Plays offline</h3>
+            <p>No accounts, no servers, no tracking. Your progress stays on your device.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── PRIVACY ─────────── -->
+    <section id="privacy" class="prose">
+      <div class="container narrow">
+        <h2 class="section-title">Privacy Policy</h2>
+        <p class="meta">Effective from the date of first release. Last updated 11&nbsp;October&nbsp;2026.</p>
+
+        <p>Mossgate is made by <strong>JPHsystems</strong>, a one-person studio operated by Jean-Pierre Hermans in Belgium. This page explains what data the game handles. The short version: <em>nothing leaves your device</em>.</p>
+
+        <h3>1. Data Mossgate does NOT collect</h3>
+        <ul>
+          <li>No personal information (name, email, phone, address).</li>
+          <li>No analytics, telemetry, or tracking pixels.</li>
+          <li>No advertising identifiers (IDFA).</li>
+          <li>No location data.</li>
+          <li>No contacts, photos, microphone, camera, or other device sensors.</li>
+        </ul>
+
+        <h3>2. Data stored on your device</h3>
+        <ul>
+          <li><strong>Game progress:</strong> which gates you cleared and the best coin count per gate. Stored locally via Apple&rsquo;s <code>UserDefaults</code> and standard Web storage (when running the in-app browser preview). Never transmitted anywhere.</li>
+          <li><strong>Settings:</strong> your preferences for sound and SFX volume, plus the on/off toggles for each.</li>
+        </ul>
+        <p>You can wipe all of this from the in-game <em>Setup → Reset all progress</em> action, or by deleting the app.</p>
+
+        <h3>3. Game Center (optional)</h3>
+        <p>If you sign in to Game Center, Apple handles your Game Center profile. Mossgate uses GameKit only to record achievements and leaderboard scores you earn in-game. We never see your Game Center friends list, your Apple ID email, or anything else from your Apple account. You can revoke the permission at any time in <em>iOS Settings → Game Center</em>.</p>
+
+        <h3>4. In-app purchases</h3>
+        <p>Mossgate has no in-app purchases at the time of writing. If future versions add any, payment is handled entirely by Apple; JPHsystems never sees your card details.</p>
+
+        <h3>5. Children&rsquo;s privacy</h3>
+        <p>Mossgate is suitable for all ages. It contains no user-generated content, no chat, no third-party advertising, and no links that take children outside the app.</p>
+
+        <h3>6. Required-reason API declarations</h3>
+        <p>Mossgate declares the following &ldquo;required-reason&rdquo; API access in its <code>PrivacyInfo.xcprivacy</code> bundle resource (Apple requirement since May 2024):</p>
+        <ul>
+          <li><code>UserDefaults</code> (CA92.1) — saving settings and progress.</li>
+          <li><code>File timestamp</code> (C617.1) — reading asset timestamps during level loads.</li>
+          <li><code>Disk space</code> (E174.1) — confirming there is room to write saves.</li>
+          <li><code>System boot time</code> (35F9.1) — used by SpriteKit&rsquo;s internal scheduling.</li>
+        </ul>
+        <p>None of these accesses is used to identify you or send data anywhere.</p>
+
+        <h3>7. Changes to this policy</h3>
+        <p>If we ever change what Mossgate does with data, we will update this page and the version listed under &ldquo;Last updated&rdquo; above. Material changes will be reflected in the release notes for the relevant version on the App Store.</p>
+
+        <h3>8. Contact</h3>
+        <p>Questions, concerns, or data deletion requests: <a href="mailto:support@jphsystems.io">support@jphsystems.io</a>. JPHsystems, Belgium.</p>
+      </div>
+    </section>
+
+    <!-- ─────────── SUPPORT ─────────── -->
+    <section id="support" class="prose alt">
+      <div class="container narrow">
+        <h2 class="section-title">Support &amp; FAQ</h2>
+        <p class="meta">Something not working? Most things are answered below.</p>
+
+        <details class="faq" open>
+          <summary>The screen rotates to portrait when I launch the app. Is that a bug?</summary>
+          <p>No. The splash screen runs in portrait because it&rsquo;s a vertical poster (think of a book cover). The game itself locks to landscape as soon as you tap &ldquo;Tap to begin&rdquo;. iOS will rotate the device at that moment.</p>
+        </details>
+
+        <details class="faq">
+          <summary>The game feels stuck on the splash. What now?</summary>
+          <p>Make sure you actually <em>tap</em> somewhere on the splash &mdash; it doesn&rsquo;t autorun. If you tapped and it still won&rsquo;t advance, force-quit and relaunch; if it keeps happening, email <a href="mailto:support@jphsystems.io">support@jphsystems.io</a> with your iPhone model and iOS version.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Can I play in portrait?</summary>
+          <p>No. Mossgate is built for landscape only; the levels, the camera, and the on-screen controls are all designed around a wide canvas. The app explicitly disables portrait orientation for the gameplay phase.</p>
+        </details>
+
+        <details class="faq">
+          <summary>My progress disappeared after I updated the app.</summary>
+          <p>Progress is stored in <code>UserDefaults</code>, which survives updates but <em>not</em> device restores or app deletions. If you restored an iCloud or iTunes backup onto a fresh device, the app will show a clean slate. There is no cloud save in version 1.</p>
+        </details>
+
+        <details class="faq">
+          <summary>How do I reset everything?</summary>
+          <p>Open <em>Setup</em> from the title screen, scroll to the bottom, and tap <em>Reset all progress</em>. This clears every cleared gate and best-coin count. The app will ask you to confirm before it does anything.</p>
+        </details>
+
+        <details class="faq">
+          <summary>The audio doesn&rsquo;t play. What gives?</summary>
+          <p>Two common ones:</p>
+          <ol>
+            <li>The hardware mute switch on the side of the iPhone is on. iOS routes through that even in landscape.</li>
+            <li>You turned sound or SFX off in <em>Setup</em>. Open Setup and re-enable them.</li>
+          </ol>
+          <p>If the audio works elsewhere on the device but not in Mossgate, email us.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Can I get a refund?</summary>
+          <p>Refund requests are handled by Apple. Use <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> &mdash; we can&rsquo;t issue refunds ourselves and don&rsquo;t see your payment details.</p>
+        </details>
+
+        <details class="faq">
+          <summary>I found a bug / have a feature request.</summary>
+          <p>Email <a href="mailto:support@jphsystems.io">support@jphsystems.io</a>. Include your iPhone model, your iOS version (find it in <em>Settings → General → About</em>), and what you were doing when it happened. Screenshots help.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Is there a level editor / mod tools / PC port?</summary>
+          <p>Not at the moment. Mossgate&rsquo;s levels are hand-built and shipped with each release. If you want something specific, the email above is the right door.</p>
+        </details>
+
+        <p class="meta" style="margin-top: 24px;">Still stuck? Email <a href="mailto:support@jphsystems.io">support@jphsystems.io</a>. Replies are best-effort but JPHsystems is a real human, not a bot.</p>
+      </div>
+    </section>
+
+    <!-- ─────────── CHANGELOG ─────────── -->
+    <section id="changelog" class="prose">
+      <div class="container narrow">
+        <h2 class="section-title">Changelog</h2>
+        <p class="meta">Public release notes. Mirrors the in-app &ldquo;What&rsquo;s new&rdquo; section.</p>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">v1.0</span>
+            <span class="release-date">First public release</span>
+          </div>
+          <ul>
+            <li><strong>15 gates</strong> across Mossgate Dusk and Ember Caves worlds.</li>
+            <li>Native SpriteKit renderer, 60fps on iPhone XS and newer.</li>
+            <li>Landscape-only gameplay with portrait splash.</li>
+            <li>In-game <em>Setup</em> for sound + SFX toggles and volume sliders.</li>
+            <li>GameKit integration: achievements &amp; leaderboards (requires sign-in to Game Center).</li>
+            <li>Progress saved locally; no accounts, no tracking.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── DOWNLOAD ─────────── -->
+    <section id="download" class="download">
+      <div class="container narrow">
+        <h2 class="section-title">Get it on the App Store</h2>
+        <p>Mossgate runs on iPhone with iOS 18.0 or later. The app is universal — every supported iPhone screen size works in landscape.</p>
+        <p class="cta-row">
+          <a href="https://apps.apple.com/app/id000000000" class="badge" aria-label="Download on the App Store">
+            <span class="badge-top">Download on the</span>
+            <span class="badge-bot">App Store</span>
+          </a>
+        </p>
+        <p class="meta">Once the app is live, replace <code>id000000000</code> in the link above with the real App Store identifier.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Mossgate is a game by <strong>JPHsystems</strong> · Belgium · <a href="mailto:support@jphsystems.io">support@jphsystems.io</a></p>
+      <p><a href="#privacy">Privacy</a> · <a href="#support">Support</a> · <a href="#changelog">Changelog</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
