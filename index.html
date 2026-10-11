@@ -33,7 +33,7 @@
       <div class="hero-inner">
         <p class="eyebrow">Dusk ruins</p>
         <h1 class="title">Mossgate</h1>
-        <p class="tagline">Run, jump, and keep the lantern lit across three worlds.</p>
+        <p class="tagline">Run, jump, and keep the lantern lit through the dusk ruins.</p>
         <p class="byline">a <strong>JPHsystems</strong> game · iPhone · landscape</p>
         <div class="hero-actions">
           <a href="#download" class="btn primary">Download on the App Store</a>
@@ -64,12 +64,24 @@
         <h2 class="section-title">What Mossgate is</h2>
         <div class="grid three">
           <article class="card">
-            <h3>15 hand-built gates</h3>
-            <p>Three worlds — Mossgate Dusk, Ember Caves, and two more to come. Each gate introduces a new idea: movers, one-way ledges, double-jumps.</p>
+            <h3>Seven hand-built gates</h3>
+            <p>Two worlds so far &mdash; Mossgate Dusk and Ember Caves &mdash; with more gates and a third world planned for 1.0. Each gate introduces a new idea: movers, one-way ledges, double-jumps.</p>
+          </article>
+          <article class="card">
+            <h3>A different world every restart</h3>
+            <p>Each run reshuffles the sky and the stars, where the coins and lanterns sit, and the timing of the moving platforms. The gate is always reachable &mdash; only the way there changes.</p>
+          </article>
+          <article class="card">
+            <h3>Coins placed by a playing AI</h3>
+            <p>Before a level opens, an autonomous runner plays it off-screen. The coins land along the route it actually took, so a reshuffle can move a coin but can never strand one behind a jump you cannot make.</p>
           </article>
           <article class="card">
             <h3>Built for iPhone</h3>
-            <p>Native SpriteKit renderer, true 60fps on every supported device. Landscape only. Your thumb is the control scheme.</p>
+            <p>Native SpriteKit renderer, true 60fps on every supported device. Landscape only. Your thumb is the control scheme &mdash; or pair a Bluetooth controller.</p>
+          </article>
+          <article class="card">
+            <h3>How to play, in the game</h3>
+            <p>A built-in guide on the title screen, illustrated with the game&rsquo;s own art: every pickup, every hazard, and how your light works.</p>
           </article>
           <article class="card">
             <h3>Plays offline</h3>
@@ -154,6 +166,26 @@
         </details>
 
         <details class="faq">
+          <summary>Why does the level look different every time I open the app?</summary>
+          <p>That is the point. Every run gets a fresh seed: the sky and stars are re-tinted, the coins and lanterns move, and the moving platforms run on different timing. The gate is always reachable &mdash; only the way there changes. To get another world without relaunching, open <em>Setup</em> and tap <em>Shuffle</em>.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Are the coins in the same place every time?</summary>
+          <p>No. Before a level opens, an autonomous runner plays it off-screen, and the coins are placed along the route that run actually took. So the layout moves with the world &mdash; and no coin can end up somewhere you cannot reach.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Can I use a game controller?</summary>
+          <p>Yes. Pair a Bluetooth or MFi controller with your iPhone, then turn on <em>Game controller</em> in <em>Setup</em>. Setup also shows which pad is connected and what each button does: <strong>A</strong> or d-pad up to jump, <strong>B</strong> or d-pad down for down, the left stick or d-pad to move, and <strong>Menu</strong> or <strong>Options</strong> to pause.</p>
+        </details>
+
+        <details class="faq">
+          <summary>Where do I find the controls?</summary>
+          <p>Tap <em>How to play</em> on the title screen. It walks through the controls, every pickup and hazard you will meet, and how your light works.</p>
+        </details>
+
+        <details class="faq">
           <summary>My progress disappeared after I updated the app.</summary>
           <p>Progress is stored in <code>UserDefaults</code>, which survives updates but <em>not</em> device restores or app deletions. If you restored an iCloud or iTunes backup onto a fresh device, the app will show a clean slate. There is no cloud save in version 1.</p>
         </details>
@@ -196,20 +228,51 @@
     <section id="changelog" class="prose">
       <div class="container narrow">
         <h2 class="section-title">Changelog</h2>
-        <p class="meta">Public release notes. Mirrors the in-app &ldquo;What&rsquo;s new&rdquo; section.</p>
+        <p class="meta">Public release notes. Current build: <strong>0.5.0</strong> (build 14).</p>
 
         <div class="release">
           <div class="release-head">
-            <span class="release-version">v1.0</span>
-            <span class="release-date">First public release</span>
+            <span class="release-version">1.0</span>
+            <span class="release-date">In development</span>
           </div>
           <ul>
-            <li><strong>15 gates</strong> across Mossgate Dusk and Ember Caves worlds.</li>
-            <li>Native SpriteKit renderer, 60fps on iPhone XS and newer.</li>
-            <li>Landscape-only gameplay with portrait splash.</li>
-            <li>In-game <em>Setup</em> for sound + SFX toggles and volume sliders.</li>
-            <li>GameKit integration: achievements &amp; leaderboards (requires sign-in to Game Center).</li>
-            <li>Progress saved locally; no accounts, no tracking.</li>
+            <li>Further gates, and the third world.</li>
+            <li>Final pass on art, audio and balancing.</li>
+            <li>Game Center achievements and leaderboards go live once the Apple Developer team is wired up.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.5.0</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>Coins are now placed by an AI runner.</strong> The game plays the level off-screen first, then puts the coins where that run actually went &mdash; so they are never out of reach, and never in the same place twice.</li>
+            <li><strong>New <em>How to play</em> screen</strong>, on the title screen. Illustrated with the game&rsquo;s own sprites: the controls, every pickup and hazard, and how the light works.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.4.0</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>A different world every restart.</strong> The sky palette, the starfield, where the coins and lanterns sit, and the timing of the moving platforms are all reshuffled per run. <em>Setup</em> shows the current seed and can roll a new world without relaunching.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.3.x</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>External controller support</strong> &mdash; pair a Bluetooth pad and <em>Setup</em> shows what is connected and what each button does.</li>
+            <li>The light counter reads <strong>3/3</strong> and counts down with each fall, to 0/3 and game over.</li>
+            <li>The <strong>DOWN</strong> pad has a job on solid ground: look over the edge, dive faster while falling, or drop through a pale ledge.</li>
+            <li>Looping background music, one theme per world, and a proper victory fanfare at the gate.</li>
           </ul>
         </div>
       </div>
