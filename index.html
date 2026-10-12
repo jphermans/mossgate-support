@@ -64,6 +64,10 @@
         <h2 class="section-title">What Mossgate is</h2>
         <div class="grid three">
           <article class="card">
+            <h3>A new gate every day</h3>
+            <p>The Daily Gate is one gate, one seed, the same for every player &mdash; and a different one tomorrow. Free, above the worlds on the title screen, with a streak for the days you finish it.</p>
+          </article>
+          <article class="card">
             <h3>Thirty-six gates, rebuilt every run</h3>
             <p>Six worlds of six gates. Each world opens with its hand-built gates, and the rest are generated for that run &mdash; so most of the game is different every time you play it.</p>
           </article>
@@ -239,7 +243,22 @@
     <section id="changelog" class="prose">
       <div class="container narrow">
         <h2 class="section-title">Changelog</h2>
-        <p class="meta">Public release notes. Current build: <strong>0.7.6</strong> (build 29).</p>
+        <p class="meta">Public release notes. Current build: <strong>0.7.30</strong> (build 53).</p>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.30</span>
+            <span class="release-date">12 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>A daily gate.</strong> One gate, one seed per day, the same for every player in the world, free, at the top of the title screen. Coins are the score and the streak counts the days you finish it. It changes at midnight UTC rather than at your local midnight, so nobody gets tomorrow&rsquo;s gate early &mdash; and it costs you nothing, because a launch has always been a fresh set of worlds.</li>
+            <li><strong>Relight puts you back on the last waystone.</strong> It always should have. The function existed and nothing called it, so both buttons restarted the gate from the top and the guide&rsquo;s promise &mdash; &ldquo;you carry on from the last waystone you touched&rdquo; &mdash; was never kept. The death panel now clears when you relight, instead of sitting over a game that is already running.</li>
+            <li><strong>The difficulty curve rises again.</strong> The hazards in a generated gate summed past 100% from the third world on, so the step-up and step-down code below them could never be reached: worlds 3 to 6 were flat ground with gaps and brambles, and the game got <em>easier</em> the further in you went. Every world has its shape back.</li>
+            <li><strong>Gates are roughly twice as long.</strong></li>
+            <li><strong>Coins stay off the brambles and off the goal.</strong> No coin hangs low over a spike, and none is planted on the flag &mdash; the flag is always on the grass.</li>
+            <li><strong>Look up.</strong> There was a button to look down and none to look up, so you could not see what was above you before going back.</li>
+          </ul>
+        </div>
 
         <div class="release">
           <div class="release-head">
