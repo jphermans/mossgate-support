@@ -109,9 +109,15 @@ a:hover { text-decoration: underline; }
   position: relative;
   padding: 88px 22px 72px;
   text-align: center;
+  /* Three paint layers, top to bottom: the amber glow, a dusk scrim, and the painted
+     lantern-bearer underneath both.
+     The scrim is the old opaque gradient made translucent, because it now has to
+     darken the painting rather than replace it. Same treatment as the app's splash and
+     start page — vague enough to read the title over, present enough to see. */
   background:
     radial-gradient(ellipse at 50% 28%, rgba(240, 160, 64, 0.30), transparent 60%),
-    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+    linear-gradient(180deg, rgba(7, 20, 22, 0.62) 0%, rgba(12, 28, 31, 0.88) 100%),
+    url("../assets/hero-lantern.jpg") center 30% / cover no-repeat;
   overflow: hidden;
 }
 
