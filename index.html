@@ -69,11 +69,11 @@
           </article>
           <article class="card">
             <h3>A different world every restart</h3>
-            <p>Each run reshuffles the sky and the stars, where the coins and lanterns sit, and the timing of the moving platforms. The gate is always reachable &mdash; only the way there changes.</p>
+            <p>Each run reshuffles the sky and the stars, where the coins and lanterns sit, and the timing of the moving platforms. Coins are also laid out fresh on every attempt at a gate. The gate is always reachable &mdash; only the way there changes.</p>
           </article>
           <article class="card">
-            <h3>Coins placed by a playing AI</h3>
-            <p>Before a level opens, an autonomous runner plays it off-screen. The coins land along the route it actually took, so a reshuffle can move a coin but can never strand one behind a jump you cannot make.</p>
+            <h3>Coins you have to jump for</h3>
+            <p>Every coin hangs above your head, so it takes a jump to take it &mdash; and the layout is new on every attempt at a gate. No coin is ever placed anywhere a jump cannot reach, and the game checks that against its own physics before the level opens.</p>
           </article>
           <article class="card">
             <h3>Built for iPhone</h3>
@@ -172,7 +172,18 @@
 
         <details class="faq">
           <summary>Are the coins in the same place every time?</summary>
-          <p>No. Before a level opens, an autonomous runner plays it off-screen, and the coins are placed along the route that run actually took. So the layout moves with the world &mdash; and no coin can end up somewhere you cannot reach.</p>
+          <p>No &mdash; the layout is new every time you start a gate. Every coin is checked against the game&rsquo;s own physics before it is placed, so wherever a coin appears, you can take it.</p>
+        </details>
+
+        <details class="faq">
+          <summary>The coins moved while I was playing. Is that a bug?</summary>
+          <p>No, that is deliberate. If you get twenty seconds into a gate without losing a life and with most of the coins already collected, the ones you have not taken move somewhere new &mdash; the game has noticed you are finding it too easy. There is a small warm burst when it happens so you can see the change was real. Lose a life and it leaves you alone for the rest of that attempt.</p>
+        </details>
+
+        <details class="faq">
+          <summary>I left a gate half-finished. Did I lose my progress?</summary>
+          <p>No. Going back to the menu keeps your coins, your lanterns, your checkpoint and where you were standing, and walking back into that gate puts you where you left off. It only resets if you finish the gate, reset your progress, or run out of light.</p>
+          <p>One thing worth knowing: relaunching the app gives you a new world, and a saved position belongs to the world it was played in. Rather than dropping you into terrain that no longer exists, the game discards it and starts that gate fresh.</p>
         </details>
 
         <details class="faq">
@@ -192,7 +203,7 @@
 
         <details class="faq">
           <summary>How do I reset everything?</summary>
-          <p>Open <em>Setup</em> from the title screen, scroll to the bottom, and tap <em>Reset all progress</em>. This clears every cleared gate and best-coin count. The app will ask you to confirm before it does anything.</p>
+          <p>Open <em>Setup</em> from the title screen, scroll to the bottom, and tap <em>Reset all progress</em>. This clears every cleared gate and best-coin count. Your sound, volume and controller settings are kept exactly as they are, and the app asks you to confirm first.</p>
         </details>
 
         <details class="faq">
@@ -228,7 +239,7 @@
     <section id="changelog" class="prose">
       <div class="container narrow">
         <h2 class="section-title">Changelog</h2>
-        <p class="meta">Public release notes. Current build: <strong>0.6.0</strong> (build 16).</p>
+        <p class="meta">Public release notes. Current build: <strong>0.7.4</strong> (build 27).</p>
 
         <div class="release">
           <div class="release-head">
@@ -238,6 +249,72 @@
           <ul>
             <li>Final pass on art, audio and balancing.</li>
             <li>Game Center achievements and leaderboards go live once the Apple Developer team is wired up.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.4</span>
+            <span class="release-date">12 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>Coins are worth going for.</strong> Every coin now hangs above your head, so walking past never takes one &mdash; you have to jump. The layout is new every time you attempt a gate, and if you are having no trouble at all, the coins you have not collected move to fresh spots part-way through the run.</li>
+            <li><strong>No coin is ever out of reach.</strong> Each one is checked against the game&rsquo;s own physics with an ordinary jump before it is placed, and there is a final fallback that cannot fail &mdash; so wherever a coin hangs, you can take it.</li>
+            <li>Fixed a crash where iOS could close the app while a level was loading.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.3</span>
+            <span class="release-date">12 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>Leaving a gate keeps your place.</strong> Go back to the menu part-way through and your coins, lanterns, checkpoint and position are all kept &mdash; coming back puts you where you left off instead of starting the gate again. Finishing the gate, resetting your progress, or losing your last life clears it, so a gate starts fresh when it should.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.2</span>
+            <span class="release-date">12 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>The coin counter counts.</strong> It stayed at 0 while you were collecting coins, which made coins look like they could not be picked up at all.</li>
+            <li><strong>Platform edges hold you properly.</strong> You used to be able to stand with nearly your whole body past the edge of a ledge without falling. Being held up now needs a real foothold rather than a toe on the corner.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.1</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>CLEAR is readable.</strong> The badge on a finished gate was the smallest text on the row &mdash; smaller than the gate name. It is now the largest.</li>
+            <li><strong>DOWN no longer drops you off a ledge.</strong> Tapping DOWN to look down used to step you off the platform you were standing on.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.7.0</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>The reset confirmation is part of the game now.</strong> It was the last stock iOS alert &mdash; grey and blue, sitting over a dusk screen. It uses the game&rsquo;s own colours, and it says plainly that your sound, volume and controller settings are kept.</li>
+            <li>Removed a disturbing noise while moving platforms were running.</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <div class="release-head">
+            <span class="release-version">0.6.1 &ndash; 0.6.4</span>
+            <span class="release-date">11 October 2026</span>
+          </div>
+          <ul>
+            <li><strong>The sound effects are audible.</strong> They were being generated and never played &mdash; the audio node that plays them was never started.</li>
+            <li><strong>A back button in the game</strong>, so you can leave a gate for the menu without reaching for pause.</li>
           </ul>
         </div>
 
